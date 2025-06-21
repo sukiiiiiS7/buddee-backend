@@ -12,7 +12,8 @@ This repository consolidates the backend modules I personally developed during t
 ---
 ### Watch Buddee in Action
 
-[![Demo Screenshot](https://raw.githubusercontent.com/sukiiiiiS7/buddee-backend/main/demo-cover.png)](https://github.com/sukiiiiiS7/buddee-backend/blob/main/Buddee-Demo.mp4)
+[![Open Buddee Web Demo](https://raw.githubusercontent.com/sukiiiiiS7/buddee-backend/main/demo-cover.png)](https://sukiiiiis7.github.io/buddee-backend/)
+👉 Click the image above to explore the GitHub Pages demo.
 
 ---
 ## Features
