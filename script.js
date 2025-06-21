@@ -1,35 +1,31 @@
-const canvas = document.getElementById('modelCanvas');
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(35, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
-renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setClearColor(0x000000, 0); // transparent
+// script.js
 
-const light = new THREE.HemisphereLight(0xffffff, 0x444444, 1.5);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('modelCanvas'), alpha: true });
+renderer.setSize(300, 300); 
+
+camera.position.z = 2;
+
+const light = new THREE.HemisphereLight(0xffffff, 0x444444);
 scene.add(light);
 
-const loader = new THREE.GLTFLoader();
-loader.load('photorealistic_plant.glb', function (gltf) {
-  const model = gltf.scene;
-  model.scale.set(1.5, 1.5, 1.5);
-  model.rotation.y = Math.PI; // rotate to face front
-  scene.add(model);
+const loader = new window.THREE.GLTFLoader();
 
-  const animate = function () {
-    requestAnimationFrame(animate);
-    model.rotation.y += 0.005;
-    renderer.render(scene, camera);
-  };
-  animate();
-}, undefined, function (error) {
-  console.error('GLB load error:', error);
-});
+loader.load(
+  'photorealistic_plant.glb',
+  function (gltf) {
+    scene.add(gltf.scene);
+  },
+  undefined,
+  function (error) {
+    console.error('Error loading GLB model:', error);
+  }
+);
 
-camera.position.z = 5;
+function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
 
-window.addEventListener('resize', () => {
-  camera.aspect = canvas.clientWidth / canvas.clientHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-});
+animate();
