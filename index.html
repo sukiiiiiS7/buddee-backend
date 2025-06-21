@@ -3,30 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🌱 Buddee: Let Your Plants Dream</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Buddee: Let Your Plants Dream</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>🌱 Buddee: Let Your Plants Dream</h1>
-    <p>
-      Buddee blends environmental sensing, plant health insights, and dreamlike feedback —
-      turning plant care into a magical, emotionally resonant experience.
-    </p>
+    <p>Buddee blends environmental sensing, plant health insights, and dreamlike feedback —
+    turning plant care into a magical, emotionally resonant experience.</p>
+  </header>
 
-    <video controls autoplay muted loop>
-      <source src="assets/Buddee-Demo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  <main>
+    <div class="card">
+      <video controls autoplay muted loop>
+        <source src="Buddee-Demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-    <div id="model-viewer"></div>
+    <div class="card">
+      <canvas id="modelCanvas"></canvas>
+    </div>
+  </main>
 
-    <footer>
-      Made with 🪴 by <strong>S7 / 吴思琦</strong> —
-      <a href="https://github.com/sukiiiiiS7" target="_blank">GitHub</a>
-    </footer>
-  </div>
+  <footer>
+    <p>Made with 🌱 by S7 / 吴思琦 — <a href="https://github.com/sukiiiiiS7" target="_blank">GitHub</a></p>
+  </footer>
 
-  <script type="module" src="script.js"></script>
+  <!-- Load Three.js & GLTFLoader -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
