@@ -65,7 +65,7 @@ The Buddee backend uses a trained **Random Forest Regression model** to predict 
 |-----------------|-----------------------------------------------------|
 | `app/`          | FastAPI routes and backend logic                    |
 | `leaf/`         | Leaf classification model + scoring system          |
-| `sensor/`       | Light sensor and virtual ESP32 simulator            |
+| `sensor/`       |  lux/moisture data                                  |
 | `database/`     | MongoDB models, schemas, and connection logic       |
 | `data/`         | Sample payloads and sample image records            |
 | `README_S7.md`  | Personal backend development log (by Suki Wu)       |
