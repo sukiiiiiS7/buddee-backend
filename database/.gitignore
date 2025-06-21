@@ -1,0 +1,15 @@
+# Sensitive config
+.env_user
+
+# User-uploaded test files
+*.jpg
+*.jpeg
+*.png
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db

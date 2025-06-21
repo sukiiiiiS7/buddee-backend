@@ -1,0 +1,100 @@
+{
+  "sunny": {
+    "sentences": [
+      {"text": "The sun feels amazing today!", "mood_tag": "happy"},
+      {"text": "Basking in warm light, photosynthesizing away.", "mood_tag": "happy"},
+      {"text": "What a dazzling day for leafy friends!", "mood_tag": "happy"},
+      {"text": "Sun-kissed and smiling from root to tip.", "mood_tag": "happy"},
+      {"text": "Golden beams keep my chlorophyll busy.", "mood_tag": "happy"},
+      {"text": "Bright skies, bright moods — life is good!", "mood_tag": "happy"},
+      {"text": "Soaking up sunshine like a planty sponge.", "mood_tag": "happy"},
+      {"text": "Every ray is a mini hug from the sky.", "mood_tag": "happy"},
+      {"text": "Can you see my leaves sparkle in the light?", "mood_tag": "happy"},
+      {"text": "High-five to the sunshine overhead!", "mood_tag": "happy"}
+    ]
+  },
+  "dry": {
+    "sentences": [
+      {"text": "Feeling a bit parched…", "mood_tag": "sad"},
+      {"text": "Dust in my throat—water, please?", "mood_tag": "sad"},
+      {"text": "Dreaming of waterfalls all night.", "mood_tag": "sad"},
+      {"text": "Crispy edges aren't a fashion statement.", "mood_tag": "neutral"},
+      {"text": "I could really sip a tiny droplet.", "mood_tag": "sad"},
+      {"text": "Send clouds or a watering can!", "mood_tag": "sad"},
+      {"text": "My roots are whistling for moisture.", "mood_tag": "sad"},
+      {"text": "Sahara vibes down here.", "mood_tag": "neutral"},
+      {"text": "Leaves waving SOS in dry air.", "mood_tag": "sad"},
+      {"text": "A splash would make me blush green again.", "mood_tag": "neutral"}
+    ]
+  },
+  "misty": {
+    "sentences": [
+      {"text": "Floating in a soft morning mist.", "mood_tag": "neutral"},
+      {"text": "Foggy blankets make cozy dreams.", "mood_tag": "neutral"},
+      {"text": "Moist air tickles my stomata.", "mood_tag": "happy"},
+      {"text": "Everything feels hush and magical.", "mood_tag": "neutral"},
+      {"text": "Mist pearls hug my leaves gently.", "mood_tag": "happy"},
+      {"text": "Drifting through clouds at ground level.", "mood_tag": "neutral"},
+      {"text": "Low-key vibes inside a vapor hug.", "mood_tag": "neutral"},
+      {"text": "I'm dancing with tiny water sprites.", "mood_tag": "happy"},
+      {"text": "Silence and steam — perfect combo.", "mood_tag": "neutral"},
+      {"text": "Shades of gray, mood of calm.", "mood_tag": "neutral"}
+    ]
+  },
+  "rainy": {
+    "sentences": [
+      {"text": "Raindrops make the perfect lullaby.", "mood_tag": "happy"},
+      {"text": "Every leaf gets a spa shower today.", "mood_tag": "happy"},
+      {"text": "Drip-drop rhythm sets my heartbeat.", "mood_tag": "happy"},
+      {"text": "Sky juice tastes better than tap!", "mood_tag": "happy"},
+      {"text": "Soaked but smiling under nature's faucet.", "mood_tag": "happy"},
+      {"text": "Thunder? Great percussion for my nap.", "mood_tag": "happy"},
+      {"text": "Rain bath deluxe — free refills!", "mood_tag": "happy"},
+      {"text": "Water slides forming on my veins.", "mood_tag": "happy"},
+      {"text": "Clouds delivering hugs in liquid form.", "mood_tag": "happy"},
+      {"text": "Stormy skies, happy roots.", "mood_tag": "happy"}
+    ]
+  },
+  "need_water": {
+    "sentences": [
+      {"text": " Could you spare a sip of water for me?", "mood_tag": "sad"},
+      {"text": " A little drink would be perfect!", "mood_tag": "neutral"},
+      {"text": " Hydration, please—just a drop or two!", "mood_tag": "sad"},
+      {"text": " My roots are thirsty; water would be lovely!", "mood_tag": "sad"},
+      {"text": " Pour me a tiny splash and I'll perk right up!", "mood_tag": "neutral"},
+      {"text": " Any chance of a quick watering?", "mood_tag": "neutral"},
+      {"text": " Moisture alert—send in the drizzle!", "mood_tag": "sad"},
+      {"text": " Even a sprinkle would make my day!", "mood_tag": "neutral"},
+      {"text": " I'd bloom with joy after a small drink!", "mood_tag": "neutral"},
+      {"text": " Water me and watch me glow!", "mood_tag": "happy"}
+    ]
+  },
+  "want_light": {
+    "sentences": [
+      {"text": " A bit more light would make me happier!", "mood_tag": "neutral"},
+      {"text": " Can we turn up the brightness just a tad?", "mood_tag": "neutral"},
+      {"text": " More sunshine, please—I'm craving it!", "mood_tag": "sad"},
+      {"text": " Slide me closer to the window if you can!", "mood_tag": "neutral"},
+      {"text": " I could use an extra ray or two!", "mood_tag": "neutral"},
+      {"text": " Brighter days help me thrive!", "mood_tag": "neutral"},
+      {"text": " Let the sun kiss my leaves a little longer!", "mood_tag": "happy"},
+      {"text": " Light levels low—beam me up!", "mood_tag": "neutral"},
+      {"text": " A burst of daylight would be wonderful!", "mood_tag": "happy"},
+      {"text": " Glow me up with some extra lumens!", "mood_tag": "happy"}
+    ]
+  },
+  "kaomojis": {
+    "sentences": [
+      {"text": "(´▽｀)", "mood_tag": "happy"},
+      {"text": "(｡•̀ᴗ-)✧", "mood_tag": "happy"},
+      {"text": "( •̀ ω •́ )✧", "mood_tag": "happy"},
+      {"text": "(＾▽＾)", "mood_tag": "happy"},
+      {"text": "(≧∇≦)/", "mood_tag": "happy"},
+      {"text": "ヽ(•‿•)ノ", "mood_tag": "happy"},
+      {"text": "(＾Ｕ＾)ノ~ＹＯ", "mood_tag": "happy"},
+      {"text": "(￣▽￣)ノ", "mood_tag": "happy"},
+      {"text": "(´｡• ᵕ •｡`)", "mood_tag": "neutral"},
+      {"text": "(๑˃ᴗ˂)ﻭ", "mood_tag": "happy"}
+    ]
+  }
+}

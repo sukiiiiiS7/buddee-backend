@@ -1,0 +1,5 @@
+leaf_dataset/
+leaf_cleaned_ai/
+leaf_samples/
+*.pth
+*.json
