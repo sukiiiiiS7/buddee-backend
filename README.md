@@ -79,7 +79,7 @@ The Buddee backend uses a trained **Random Forest Regression model** to predict 
 - **AI Model:** ResNet18 (PyTorch)
 - **ML Model:** Random Forest (Scikit-learn)
 - **Database:** MongoDB Atlas
-- **Sensor:** ESP32 + BH1750 / Simulated Input
+- **Sensor:** ESP32 Dev + VM7700 Light Sensor	+OLED Display (0.96" I2C)	+DC Buck +USB-C or DC Adapter+Jumper Wires + Breadboard
 - **Weather API:** Open-Meteo (hourly rain forecast)
 - **Deployment:** Render (Cloud-hosted backend)
 
