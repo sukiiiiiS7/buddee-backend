@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Buddee: AI Plant Companion</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      max-width: 720px;
-      margin: auto;
-      padding: 2rem;
-      background-color: #f8f9fa;
-    }
-    h1 {
-      color: #333;
-    }
-    video {
-      width: 100%;
-      border-radius: 10px;
-      margin: 1rem 0;
-    }
-    p {
-      line-height: 1.6;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buddee: Let Your Plants Dream</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Load Three.js and GLTFLoader from CDN -->
+  <script src="https://unpkg.com/three@0.156.1/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.156.1/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
+  <div class="container">
+    <h1>🌱 Buddee: Let Your Plants Dream</h1>
+    <p>
+      Buddee blends environmental sensing, plant health insights, and dreamlike feedback<br />
+      — turning plant care into a magical, emotionally resonant experience.
+    </p>
 
-  <h1>Buddee: AI Plant Companion</h1>
-  <p>Not just a plant care tool — Buddee lets your plant dream back.</p>
+    <video controls autoplay muted loop>
+      <source src="assets/Buddee-Demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-  <video controls poster="demo-cover.png">
-    <source src="Buddee-Demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+    <div class="model-block" id="modelContainer"></div>
 
-  <p><strong>Demo includes:</strong> Leaf health scanning, smart watering, achievement unlocking, and symbolic dream animation — all handcrafted by Suki Wu.</p>
+    <footer>
+      Made with 🪴 by <strong>S7 / 吴思琴</strong> —
+      <a href="https://github.com/sukiiiiiS7" target="_blank">GitHub</a>
+    </footer>
+  </div>
 
-  <p><strong>GitHub Repository:</strong> <a href="https://github.com/sukiiiiiS7/buddee-backend">buddee-backend</a></p>
-
-  <p><strong>Author:</strong> Suki Wu (吴思琦)</p>
-
+  <script src="script.js"></script>
 </body>
 </html>
