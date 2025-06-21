@@ -10,7 +10,11 @@ This repository consolidates the backend modules I personally developed during t
 > “Buddee doesn't just monitor your plant – it helps it dream back.”
 
 ---
+### Watch Buddee in Action
 
+[![Demo Screenshot](https://raw.githubusercontent.com/sukiiiiiS7/buddee-backend/main/demo-cover.png)](https://github.com/sukiiiiiS7/buddee-backend/blob/main/Buddee-Demo.mp4)
+
+---
 ## Features
 
 - **Leaf Classification** using ResNet18 and pseudo-labeled Reddit data
