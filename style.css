@@ -1,56 +1,130 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #F3F4F6, #AACFCF);
-  color: #798086;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(to bottom right, #f3f4f6, #e8f0ef);
+  color: #2e2e2e;
 }
 
-.container {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+header {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2f2f2f;
+  text-shadow: 1px 1px #ddd;
+  margin: 0;
+}
+
+.tagline {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #666;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding: 4px 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(3px);
+  border-radius: 8px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.video-frame {
+  width: 90%;
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 14px;
+  background: #ffffff;
   border-radius: 20px;
-  padding: 2em;
-  max-width: 800px;
+  box-shadow:
+    inset 0 0 12px rgba(255, 255, 255, 0.2),
+    0 4px 12px rgba(0, 0, 0, 0.2);
+  filter: contrast(1.02) brightness(1.02);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+}
+
+.video-frame:hover {
+  box-shadow:
+    0 0 0 2px #b49be7,
+    0 0 16px rgba(218, 185, 255, 0.6),
+    0 0 32px #cfaaff;
+  transform: scale(1.01);
+}
+
+.video-frame video {
   width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.github-button {
+  background-color: #d0e8e2;
+  border: 2px solid #444;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #222;
+  box-shadow: 2px 2px 0 #888;
+  transition: all 0.2s ease;
+  font-family: 'Courier New', monospace;
+}
+
+.github-button:hover {
+  background-color: #b6dbd2;
+  transform: scale(1.03);
+}
+
+.floating-words {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 40px;
+  overflow: visible;
   text-align: center;
 }
 
-h1 {
-  font-size: 2.4em;
-  color: #798086;
-  margin-bottom: 0.5em;
-}
-
-p {
-  font-size: 1.1em;
-  color: #6b6b6b;
-  line-height: 1.6;
-}
-
-video {
-  width: 100%;
-  max-width: 720px;
-  border-radius: 16px;
-  margin-top: 1.5em;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-footer {
-  margin-top: 2em;
-  font-size: 0.9em;
-  color: #aaa;
-}
-
-a {
-  color: #F5D481;
-  text-decoration: none;
+.floating-words span {
+  display: inline-block;
+  margin: 0 16px;
+  font-size: 1rem;
   font-weight: bold;
+  color: #a77dd1;
+  animation: floatWords 4s ease-in-out infinite;
+  font-family: 'Courier New', monospace;
 }
 
-a:hover {
-  text-decoration: underline;
+.floating-words span:nth-child(2) {
+  animation-delay: 1s;
+}
+.floating-words span:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes floatWords {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
