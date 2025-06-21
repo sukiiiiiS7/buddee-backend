@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="Buddee Logo" width="200"/>
+</p>
+
 # Buddee Backend
 
 **Buddee** is a modular backend system designed to support smart plant care, combining AI image recognition, environmental sensors, gamified interactions, and user-driven feedback.  
